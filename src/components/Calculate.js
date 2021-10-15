@@ -1,6 +1,12 @@
-const Calculate = () => {
+const Calculate = ({ timeDesired, distanceChosen, setResult }) => {
+
+    const handleClick = () => {
+       const splitTime = timeDesired / distanceChosen
+       setResult(splitTime)
+    }
+
     return (
-        <button>Calculate My Pace</button>
+        <button onClick={handleClick}>Calculate My Pace</button>
     );
 };
 

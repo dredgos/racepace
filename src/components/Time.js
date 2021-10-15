@@ -1,10 +1,16 @@
-const Time = () => {
+const Time = ({ timeSelected }) => {
+
+
+    const handleTime = (e) => {
+        timeSelected(parseInt(e.currentTarget.value))
+    }
+
     return (
         <div>
             <h2>Desired Time</h2>
             <form>
                 <label for="time">Time (mins)</label>
-                <input type="number" id="time" name="time"/>
+                <input onChange={handleTime} type="number" id="time" name="time"/>
             </form>
         </div>
     );

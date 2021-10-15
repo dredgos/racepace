@@ -8,15 +8,17 @@ import { useState } from "react";
 const App = () => {
 
   const [distance, setDistance] = useState(0)
+  const [time, setTime] = useState(0)
+  const [result, setResult] = useState(0)
 
 
   return (
     <div>
       <Header />
       <Distance distanceChosen={distance} distanceSelect={setDistance}/>
-      <Time />
-      <Calculate />
-      <Result />
+      <Time timeSelected={setTime}/>
+      <Calculate timeDesired={time} distanceChosen={distance} setResult={setResult}/>
+      <Result result={result}/>
     </div>
   );
 };
