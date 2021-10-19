@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from "./components/Header";
+import Distance from "./components/Distance";
+import Time from "./components/Time";
+import Calculate from "./components/Calculate";
+import Result from "./components/Result";
+import { useState } from "react";
 
-function App() {
+const App = () => {
+
+  const [distance, setDistance] = useState(0)
+  const [time, setTime] = useState(0)
+  const [result, setResult] = useState(0)
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header />
+      <Distance distanceChosen={distance} distanceSelect={setDistance}/>
+      <Time timeSelected={setTime}/>
+      <Calculate timeDesired={time} distanceChosen={distance} setResult={setResult}/>
+      <Result result={result}/>
     </div>
   );
-}
+};
 
 export default App;
