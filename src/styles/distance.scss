@@ -1,0 +1,15 @@
+.distance-select {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.distance-buttons-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.distance-button {
+    margin-bottom: 0.25rem;
+}
