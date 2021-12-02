@@ -1,6 +1,6 @@
 const Header = () => {
     return (
-        <h1>Race Pacer</h1>
+        <h1 className="page-title">Race Pacer</h1>
     );
 };
 
