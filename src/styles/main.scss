@@ -1,8 +1,18 @@
 @import 'variables.scss';
 @import 'header.scss';
 @import 'distance.scss';
+@import 'time.scss';
+@import 'calculate.scss';
+@import 'result.scss';
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
 
 .page-wrapper {
     max-width: 75%;
     margin: auto
+}
+
+h2 {
+    font-family: $primary-font;
 }

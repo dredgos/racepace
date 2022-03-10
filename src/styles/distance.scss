@@ -2,14 +2,21 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-bottom: solid 1px lightgray;
 }
 
-.distance-buttons-container {
+.distance-buttons-container{
     display: flex;
-    flex-direction: column;
+    width: 50%;
     justify-content: center;
 }
 
 .distance-button {
-    margin-bottom: 0.25rem;
+    margin: 0.25rem;
+    padding: 0.5rem;
+    border-radius: 8px;
+    border: solid 1px $color-grey;
+    min-width: 50%;
+    background-color: $color-blue;
+    color: white;
 }

@@ -6,7 +6,9 @@ const Calculate = ({ timeDesired, distanceChosen, setResult }) => {
     }
 
     return (
-        <button onClick={handleClick}>Calculate My Pace</button>
+        <div className="calculate">
+            <button onClick={handleClick}>Calculate My Pace</button>
+        </div>
     );
 };
 
